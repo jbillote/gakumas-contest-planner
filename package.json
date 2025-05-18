@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate_icons": "python -m scripts.images.convert_to_webp"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
