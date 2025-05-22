@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button"
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { PCardSelector } from "@/components/pCardSelector"
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 
 export default function Home() {
   return (
@@ -8,54 +7,57 @@ export default function Home() {
       <h1 className="text-lg font-bold">Target Cards</h1>
       <div>
         <div className="inline-block p-2 w-[96px] h-[96px]">
-          <Popover>
-            <PopoverTrigger className="w-full h-full">
-              <div className="bg-accent hover:bg-accent-foreground w-full h-full rounded-md"></div>
-            </PopoverTrigger>
-            <PopoverContent>
+          <Dialog>
+            <DialogTrigger className="w-full h-full">
+              <div className="bg-accent hover:bg-slate-200 w-full h-full rounded-md"></div>
+            </DialogTrigger>
+            <DialogTitle className="sr-only">
+              test
+            </DialogTitle>
+            <DialogContent>
               <PCardSelector />
-            </PopoverContent>
-          </Popover>
+            </DialogContent>
+          </Dialog>
         </div>
         <div className="inline-block p-2 w-[96px] h-[96px]">
-          <Popover>
-            <PopoverTrigger className="w-full h-full">
-              <div className="bg-accent hover:bg-accent-foreground w-full h-full rounded-md"></div>
-            </PopoverTrigger>
-            <PopoverContent>
+          <Dialog>
+            <DialogTrigger className="w-full h-full">
+              <div className="bg-accent hover:bg-slate-200 w-full h-full rounded-md"></div>
+            </DialogTrigger>
+            <DialogContent>
               <PCardSelector />
-            </PopoverContent>
-          </Popover>
+            </DialogContent>
+          </Dialog>
         </div>
         <div className="inline-block p-2 w-[96px] h-[96px]">
-          <Popover>
-            <PopoverTrigger className="w-full h-full">
-              <div className="bg-accent hover:bg-accent-foreground w-full h-full rounded-md"></div>
-            </PopoverTrigger>
-            <PopoverContent>
+          <Dialog>
+            <DialogTrigger className="w-full h-full">
+              <div className="bg-accent hover:bg-slate-200 w-full h-full rounded-md"></div>
+            </DialogTrigger>
+            <DialogContent>
               <PCardSelector />
-            </PopoverContent>
-          </Popover>
+            </DialogContent>
+          </Dialog>
         </div>
         <div className="inline-block p-2 w-[96px] h-[96px]">
-          <Popover>
-            <PopoverTrigger className="w-full h-full">
-              <div className="bg-accent hover:bg-accent-foreground w-full h-full rounded-md"></div>
-            </PopoverTrigger>
-            <PopoverContent>
+          <Dialog>
+            <DialogTrigger className="w-full h-full">
+              <div className="bg-accent hover:bg-slate-200 w-full h-full rounded-md"></div>
+            </DialogTrigger>
+            <DialogContent>
               <PCardSelector />
-            </PopoverContent>
-          </Popover>
+            </DialogContent>
+          </Dialog>
         </div>
         <div className="inline-block p-2 w-[96px] h-[96px]">
-          <Popover>
-            <PopoverTrigger className="w-full h-full">
-              <div className="bg-accent hover:bg-accent-foreground w-full h-full rounded-md"></div>
-            </PopoverTrigger>
-            <PopoverContent>
+          <Dialog>
+            <DialogTrigger className="w-full h-full">
+              <div className="bg-accent hover:bg-slate-200 w-full h-full rounded-md"></div>
+            </DialogTrigger>
+            <DialogContent>
               <PCardSelector />
-            </PopoverContent>
-          </Popover>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
 
