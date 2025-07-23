@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button"
+import { Dialog, DialogTrigger, DialogContent, DialogTitle } from "@/components/ui/dialog"
+import { PCardSelector } from "@/components/pCardSelector"
 
 export default function Home() {
   return (
@@ -6,7 +8,17 @@ export default function Home() {
       <h1 className="text-lg font-bold">Target Cards</h1>
       <div>
         <div className="inline-block p-2">
-          <Button variant="secondary" />
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="secondary" />
+            </DialogTrigger>
+            <DialogContent className="max-h-5/6 overflow-scroll">
+              <DialogTitle className="sr-only">
+                Target 1
+              </DialogTitle>
+              <PCardSelector />
+            </DialogContent>
+          </Dialog>
         </div>
         <div className="inline-block p-2">
           <Button variant="secondary" />
