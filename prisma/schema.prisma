@@ -18,6 +18,7 @@ model PCard {
   type            Type
   plan            Plan
   rarity          Rarity
+  support         Boolean @default(false)
   cost            Cost?
   customCharacter Boolean
 }
@@ -37,7 +38,6 @@ enum Plan {
 
 enum Rarity {
   T
-  SUPPORT
   R
   SR
   SSR
