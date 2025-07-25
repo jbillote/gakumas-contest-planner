@@ -17,7 +17,7 @@ export function PCardIcon({ pCard }: { pCard: pCardIconProps }) {
     }
 
     return (
-        <div className="rounded-lg size-16 bg-cover overflow-hidden" style={{
+        <div className="rounded-lg size-16 bg-cover overflow-hidden cursor-pointer hover:outline-solid" style={{
             backgroundImage: `url(/pcards/${pCard.id}.webp)`
         }}>
             <img

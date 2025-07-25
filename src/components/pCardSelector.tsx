@@ -23,7 +23,7 @@ async function loadCards() {
 export async function PCardSelector() {
     const cards = await loadCards()
     return (
-        <div className="flex max-w-xl flex-wrap gap-1 justify-center align-center overflow-y-scroll max-h-fit box-border">
+        <div className="flex max-w-xl flex-wrap gap-1 justify-center align-center overflow-y-scroll max-h-fit box-border py-2">
             {cards.map((card) => (
                 <PCardIcon
                     pCard={{
