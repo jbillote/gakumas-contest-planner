@@ -23,18 +23,23 @@ async function loadCards() {
 export async function PCardSelector() {
     const cards = await loadCards()
     return (
-        <div className="flex max-w-xl flex-wrap gap-1 justify-center align-center overflow-y-scroll max-h-fit box-border py-2">
-            {cards.map((card) => (
-                <PCardIcon
-                    pCard={{
-                        id: `${card.filename}${card.customCharacter ? '-jsna' : ''}`,
-                        enhanced: false,
-                        type: typeFromDBString(card.type),
-                        rarity: rarityFromString(card.rarity)
-                    }}
-                    key={card.id}
-                />
-            ))}
+        <div>
+            <div className="flex flex-wrap max-w-xl gap-1 justify-center align-center overflow-y-scroll max-h-[95%] box-border py-2">
+                {cards.map((card) => (
+                    <PCardIcon
+                        pCard={{
+                            id: `${card.filename}${card.customCharacter ? '-jsna' : ''}`,
+                            enhanced: false,
+                            type: typeFromDBString(card.type),
+                            rarity: rarityFromString(card.rarity)
+                        }}
+                        key={card.id}
+                    />
+                ))}
+            </div>
+            <div className="max-h-[5%]">
+                Filters
+            </div>
         </div>
     )
 }
