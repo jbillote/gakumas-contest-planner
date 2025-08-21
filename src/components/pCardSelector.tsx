@@ -44,6 +44,9 @@ export async function PCardSelector() {
                 <div>
                     Free Sense Logic Anomaly
                 </div>
+                <div>
+                    Characters
+                </div>
             </div>
         </div >
     )
