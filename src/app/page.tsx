@@ -12,7 +12,7 @@ export default function Home() {
             <DialogTrigger asChild>
               <Button variant="secondary" />
             </DialogTrigger>
-            <DialogContent className="max-h-5/6 overflow-scroll">
+            <DialogContent className="max-h-5/6">
               <DialogTitle className="sr-only">
                 Target 1
               </DialogTitle>
@@ -35,6 +35,6 @@ export default function Home() {
       </div>
 
       <h1 className="text-lg font-bold">Valid Cards</h1>
-    </div>
+    </div >
   );
 }
