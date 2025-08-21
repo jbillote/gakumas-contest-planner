@@ -23,7 +23,7 @@ async function loadCards() {
 export async function PCardSelector() {
     const cards = await loadCards()
     return (
-        <div className="h-3/12 overflow-y-scroll">
+        <div className="h-3/12 ">
             < div className="flex flex-wrap max-w-xl gap-1 justify-center align-center overflow-y-scroll max-h-[95%] box-border py-2" >
                 {
                     cards.map((card) => (
@@ -41,6 +41,9 @@ export async function PCardSelector() {
             </div >
             <div className="max-h-[5%]">
                 Filters
+                <div>
+                    Free Sense Logic Anomaly
+                </div>
             </div>
         </div >
     )
