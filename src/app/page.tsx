@@ -12,7 +12,7 @@ export default function Home() {
             <DialogTrigger asChild>
               <Button variant="secondary" />
             </DialogTrigger>
-            <DialogContent className="max-h-5/6">
+            <DialogContent className="h-5/6 flex flex-col">
               <DialogTitle className="sr-only">
                 Target 1
               </DialogTitle>
