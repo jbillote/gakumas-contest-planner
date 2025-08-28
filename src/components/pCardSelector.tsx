@@ -47,31 +47,32 @@ export async function PCardSelector() {
                     }
                 </div >
             </div>
-            <div className="h-[5%]">
-                Filters
-                <div>
-                    <Image
-                        src={FreePlan}
-                        alt="FREE"
-                        className="size-48px"
-                    />
-                    <Image
-                        src={SensePlan}
-                        alt="FREE"
-                        className="size-48px"
-                    />
-                    <Image
-                        src={LogicPlan}
-                        alt="FREE"
-                        className="size-48px"
-                    />
-                    <Image
-                        src={AnomalyPlan}
-                        alt="FREE"
-                        className="size-48px"
-                    />
+            <div className="h-21 flex gap-1">
+                <div className="flex gap-4">
+                    <div className="rounded-md bg-accent flex flex-wrap p-2 gap-1 w-21">
+                        <Image
+                            src={FreePlan}
+                            alt="FREE"
+                            className="size-8 cursor-pointer hover:outline-solid"
+                        />
+                        <Image
+                            src={SensePlan}
+                            alt="FREE"
+                            className="size-8 cursor-pointer hover:outline-solid"
+                        />
+                        <Image
+                            src={LogicPlan}
+                            alt="FREE"
+                            className="size-8 cursor-pointer hover:outline-solid"
+                        />
+                        <Image
+                            src={AnomalyPlan}
+                            alt="FREE"
+                            className="size-8 cursor-pointer hover:outline-solid"
+                        />
+                    </div>
                 </div>
-                <div>
+                <div className="rounded-md bg-accent w-full p-2">
                     Characters
                 </div>
             </div>
