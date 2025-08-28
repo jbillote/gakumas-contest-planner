@@ -109,7 +109,7 @@ async function main() {
     (null, "img_general_skillcard_men-2_080", "インフルエンサー", "MENTAL", "ANOMALY", "SR", "HIGH", true),
     (null, "img_general_skillcard_men-2_077", "忍耐力", "MENTAL", "ANOMALY", "SR", "HIGH", true),
     (null, "img_general_skillcard_men-2_079", "切磋琢磨", "MENTAL", "ANOMALY", "SR", "HIGH", true),
-    (null, "img_general_skillcard_men-2_074", "タフネス", "MENTAL", "ANOMALY", "SR", "HIGH", true)
+    (null, "img_general_skillcard_men-2_074", "タフネス", "MENTAL", "ANOMALY", "SR", "HIGH", true),
     (null, "img_general_skillcard_men-2_078", ""達成感, "MENTAL", "ANOMALY", "SR", "HIGH", true)`
   console.log(srResult)
 
