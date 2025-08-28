@@ -14,6 +14,7 @@ async function main() {
     (null, "img_general_skillcard_act-1_020", "ハイタッチ", "ACTIVE", "SENSE", "R", "HIGH", false),
     (null, "img_general_skillcard_act-1_021", "トークタイム", "ACTIVE", "SENSE", "R", "HIGH", false),
     (null, "img_general_skillcard_act-1_036", "エキサイト", "ACTIVE", "SENSE", "R", "HIGH", false),
+    (null, "img_general_skillcard_act-1_074", "ペース配分", "ACTIVE", "SENSE", "R", "HIGH", true),
     (null, "img_general_skillcard_act-1_027", "今日もおはよう", "ACTIVE", "LOGIC", "R", "LOW", false),
     (null, "img_general_skillcard_act-1_028", "ゆるふわおしゃべり", "ACTIVE", "LOGIC", "R", "LOW", false),
     (null, "img_general_skillcard_act-1_029", "もう少しだけ", "ACTIVE", "LOGIC", "R", "LOW", false),
@@ -42,7 +43,8 @@ async function main() {
     (null, "img_general_skillcard_men-1_039", "ハッピー♪", "MENTAL", "ANOMALY", "R", "LOW", false),
     (null, "img_general_skillcard_men-1_049", "嬉しい誤算", "MENTAL", "ANOMALY", "R", "HIGH", false),
     (null, "img_general_skillcard_men-1_048", "涙の思い出", "MENTAL", "ANOMALY", "R", "HIGH", false),
-    (null, "img_general_skillcard_men-1_051", "セッティング", "MENTAL", "ANOMALY", "R", "HIGH", false)`
+    (null, "img_general_skillcard_men-1_051", "セッティング", "MENTAL", "ANOMALY", "R", "HIGH", false),
+    (null, "img_general_skillcard_men-1_050", "巻き返し", "MENTAL", "ANOMALY", "R", "HIGH", false)`
   console.log(rResult)
 
   // SR
@@ -58,6 +60,7 @@ async function main() {
     (null, "img_general_skillcard_act-2_032", "スタンドプレー", "ACTIVE", "SENSE", "SR", "HIGH", true),
     (null, "img_general_skillcard_act-2_001", "シュプレヒコール", "ACTIVE", "SENSE", "SR", "HIGH", true),
     (null, "img_general_skillcard_act-2_059", "立ち位置チェック", "ACTIVE", "SENSE", "SR", "HIGH", true),
+    (null, "img_general_skillcard_act-2_061", "破竹の勢い", "ACTIVE", "SENSE", "SR", "HIGH", true),
     (null, "img_general_skillcard_act-2_046", "ラブリーウインク", "ACTIVE", "LOGIC", "SR", "LOW", true),
     (null, "img_general_skillcard_act-2_047", "ありがとうの言葉", "ACTIVE", "LOGIC", "SR", "LOW", true),
     (null, "img_general_skillcard_act-2_045", "ハートの合図", "ACTIVE", "LOGIC", "SR", "HIGH", true),
@@ -106,7 +109,8 @@ async function main() {
     (null, "img_general_skillcard_men-2_080", "インフルエンサー", "MENTAL", "ANOMALY", "SR", "HIGH", true),
     (null, "img_general_skillcard_men-2_077", "忍耐力", "MENTAL", "ANOMALY", "SR", "HIGH", true),
     (null, "img_general_skillcard_men-2_079", "切磋琢磨", "MENTAL", "ANOMALY", "SR", "HIGH", true),
-    (null, "img_general_skillcard_men-2_074", "タフネス", "MENTAL", "ANOMALY", "SR", "HIGH", true)`
+    (null, "img_general_skillcard_men-2_074", "タフネス", "MENTAL", "ANOMALY", "SR", "HIGH", true),
+    (null, "img_general_skillcard_men-2_078", "達成感", "MENTAL", "ANOMALY", "SR", "HIGH", true)`
   console.log(srResult)
 
   console.log("Inserting SSR card information")
@@ -137,6 +141,7 @@ async function main() {
     (null, "img_general_skillcard_men-3_036", "魅惑の視線", "MENTAL", "SENSE", "SSR", null, true),
     (null, "img_general_skillcard_men-3_033", "鳴り止まない拍手", "MENTAL", "SENSE", "SSR", null, true),
     (null, "img_general_skillcard_men-3_035", "天真爛漫", "MENTAL", "SENSE", "SSR", null, true),
+    (null, "img_general_skillcard_men-3_034", "天賦の才", "MENTAL", "SENSE", "SSR", null, true),
     (null, "img_general_skillcard_men-3_002", "私がスター", "MENTAL", "LOGIC", "SSR", null, true),
     (null, "img_general_skillcard_men-3_004", "星屑センセーション", "MENTAL", "LOGIC", "SSR", null, true),
     (null, "img_general_skillcard_men-3_041", "ノートの端の決意", "MENTAL", "LOGIC", "SSR", null, true),
@@ -178,6 +183,8 @@ async function main() {
     (null, "img_general_skillcard_sup-3_088", "みずたまりスキップ", "MENTAL", "FREE", "SSR", null, false, true),
     (null, "img_general_skillcard_sup-3_093", "紅葉ランニング", "MENTAL", "FREE", "SSR", null, false, true),
     (null, "img_general_skillcard_sup-3_125", "勝負はこれから！", "ACTIVE", "FREE", "SSR", null, false, true),
+    (null, "img_general_skillcard_sup-3_152", "夏夜に咲く思い出", "ACTIVE", "FREE", "SSR", null, false, true),
+    (null, "img_general_skillcard_sup-3_155", "月明かりに包まれて", "MENTAL", "FREE", "SSR", null, false, true),
     (null, "img_general_skillcard_sup-3_047", "喧嘩するほど仲がいい", "MENTAL", "SENSE", "SSR", null, false, true),
     (null, "img_general_skillcard_sup-3_090", "はじける水しぶき", "ACTIVE", "SENSE", "SSR", null, false, true),
     (null, "img_general_skillcard_sup-3_091", "交わる感情", "ACTIVE", "SENSE", "SSR", null, false, true),
