@@ -1,21 +1,31 @@
-import Image from "next/image"
+import { CardType, CardTypes } from "@/lib/cardTypes"
+import { CardRarity } from "@/lib/rarity"
 
 type pCardIconProps = {
-    id: number,
+    id: string,
     enhanced: boolean,
+    type: CardType,
+    rarity: CardRarity
 }
 
 export function PCardIcon({ pCard }: { pCard: pCardIconProps }) {
-    const id = (pCard.id + (pCard.enhanced ? 1 : 0)).toString()
+    let frame = 'card_frame_'
+    if (pCard.type == CardTypes.Trouble) {
+        frame += pCard.type
+    } else {
+        frame += `${pCard.type}_${pCard.rarity}`
+    }
 
     return (
-        <>
-            <Image
-                src={`/pcards/${id}.webp`}
-                alt={id}
-                width="96"
-                height="96"
+        <div className="rounded-lg size-16 bg-cover overflow-hidden cursor-pointer hover:outline-solid" style={{
+            backgroundImage: `url(/pcards/${pCard.id}.webp)`
+        }}>
+            <img
+                src={`/${frame}.webp`}
+                alt={pCard.id}
+                className="size-16"
+                draggable={false}
             />
-        </>
+        </div>
     )
 }
