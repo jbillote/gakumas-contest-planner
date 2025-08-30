@@ -65,85 +65,85 @@ export async function PCardSelector() {
                         <Image
                             src={FreePlan}
                             alt="FREE"
-                            className="size-8 cursor-pointer hover:outline-solid"
+                            className="size-8 cursor-pointer hover:bg-gray-500"
                         />
                         <Image
                             src={SensePlan}
                             alt="FREE"
-                            className="size-8 cursor-pointer hover:outline-solid"
+                            className="size-8 cursor-pointer hover:bg-gray-500"
                         />
                         <Image
                             src={LogicPlan}
                             alt="FREE"
-                            className="size-8 cursor-pointer hover:outline-solid"
+                            className="size-8 cursor-pointer hover:bg-gray-500"
                         />
                         <Image
                             src={AnomalyPlan}
                             alt="FREE"
-                            className="size-8 cursor-pointer hover:outline-solid"
+                            className="size-8 cursor-pointer hover:bg-gray-500"
                         />
                     </div>
                 </div>
-                <div className="rounded-md bg-accent flex flex-wrap w-full p-2">
+                <div className="rounded-md bg-accent flex flex-wrap w-full p-2 ">
                     <Image
                         src={SDSaki}
                         alt="花海咲季"
-                        className="size-8 cursor-pointer hover:outline-solid"
+                        className="size-8 cursor-pointer hover:bg-gray-500"
                     />
                     <Image
                         src={SDTemari}
                         alt="月村手毬"
-                        className="size-8 cursor-pointer hover:outline-solid"
+                        className="size-8 cursor-pointer hover:bg-gray-500"
                     />
                     <Image
                         src={SDKotone}
                         alt="藤田ことね"
-                        className="size-8 cursor-pointer hover:outline-solid"
+                        className="size-8 cursor-pointer hover:bg-gray-500"
                     />
                     <Image
                         src={SDMao}
                         alt="有村麻央"
-                        className="size-8 cursor-pointer hover:outline-solid"
+                        className="size-8 cursor-pointer hover:bg-gray-500"
                     />
                     <Image
                         src={SDLilja}
                         alt="葛城リーリヤ"
-                        className="size-8 cursor-pointer hover:outline-solid"
+                        className="size-8 cursor-pointer hover:bg-gray-500"
                     />
                     <Image
                         src={SDChina}
                         alt="倉本千奈"
-                        className="size-8 cursor-pointer hover:outline-solid"
+                        className="size-8 cursor-pointer hover:bg-gray-500"
                     />
                     <Image
                         src={SDSumika}
                         alt="紫雲清夏"
-                        className="size-8 cursor-pointer hover:outline-solid"
+                        className="size-8 cursor-pointer hover:bg-gray-500"
                     />
                     <Image
                         src={SDHiro}
                         alt="篠澤広"
-                        className="size-8 cursor-pointer hover:outline-solid"
+                        className="size-8 cursor-pointer hover:bg-gray-500"
                     />
                     <Image
                         src={SDSena}
                         alt="十王星南"
-                        className="size-8 cursor-pointer hover:outline-solid"
+                        className="size-8 cursor-pointer hover:bg-gray-500"
                     />
                     <Image
                         src={SDMisuzu}
                         alt="秦谷美鈴"
-                        className="size-8 cursor-pointer hover:outline-solid"
+                        className="size-8 cursor-pointer hover:bg-gray-500"
                     />
                     <Image
                         src={SDUme}
                         alt="花海佑芽"
-                        className="size-8 cursor-pointer hover:outline-solid"
+                        className="size-8 cursor-pointer hover:bg-gray-500"
                     />
                     <Image
                         src={SDRinami}
                         alt="姫崎莉波"
-                        className="size-8 cursor-pointer hover:outline-solid"
+                        className="size-8 cursor-pointer hover:bg-gray-500"
                     />
                 </div>
             </div>
