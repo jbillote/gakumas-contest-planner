@@ -13,28 +13,29 @@
     "db:reset": "prisma migrate reset"
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "^12.8.0",
-    "@prisma/client": "^6.12.0",
-    "@radix-ui/react-dialog": "^1.1.13",
-    "@radix-ui/react-slot": "^1.2.2",
+    "@icons-pack/react-simple-icons": "^12.9.0",
+    "@prisma/client": "^6.15.0",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "next": "15.5.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwind-merge": "^3.3.0"
+    "lucide-react": "^0.542.0",
+    "next": "15.5.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/postcss": "^4.1.12",
+    "@types/node": "^20.19.12",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "eslint": "^9.34.0",
     "eslint-config-next": "15.3.2",
-    "prisma": "^6.12.0",
-    "tailwindcss": "^4",
-    "tw-animate-css": "^1.3.0",
-    "typescript": "^5"
+    "prisma": "^6.15.0",
+    "tailwindcss": "^4.1.12",
+    "tw-animate-css": "^1.3.8",
+    "typescript": "^5.9.2"
   }
 }
