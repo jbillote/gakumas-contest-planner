@@ -22,7 +22,14 @@ async function loadCardsFromDB(plan: Plan): Promise<PCard[]> {
       support: true
     },
     where: {
-      plan: plan
+      OR: [
+        {
+          plan: plan
+        },
+        {
+          plan: Plan.FREE
+        }
+      ]
     }
   })
   return cards
