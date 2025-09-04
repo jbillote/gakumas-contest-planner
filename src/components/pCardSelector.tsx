@@ -10,7 +10,6 @@ import { typeFromDBString } from "@/lib/cardTypes"
 import { rarityFromString } from "@/lib/rarity"
 
 import Image from "next/image"
-import FreePlan from "../../public/icon_plan_common.webp"
 import SensePlan from "../../public/icon_plan_plan1.webp"
 import LogicPlan from "../../public/icon_plan_plan2.webp"
 import AnomalyPlan from "../../public/icon_plan_plan3.webp"
@@ -27,10 +26,10 @@ import SDMisuzu from "../../public/sd_icons/img_sd_hmsz_face-00.webp"
 import SDUme from "../../public/sd_icons/img_sd_hume_face-00.webp"
 import SDRinami from "../../public/sd_icons/img_sd_hrnm_face-00.webp"
 
-import { use, useEffect, useState, useTransition } from "react"
+import { startTransition, useEffect, useState } from "react"
 
 export function PCardSelector() {
-    const [currentPlan, setCurrentPlan] = useState(Plan.LOGIC)
+    const [currentPlan, setCurrentPlan] = useState(Plan.LOGIC as Plan)
     const [currentCharacter, setCurrentCharacter] = useState(PIdols.Sena as PIdol)
     const [cards, setCards] = useState([] as PCard[])
 
@@ -40,6 +39,14 @@ export function PCardSelector() {
             setCards(cards)
         })()
     }, [])
+
+    function applyPlan(plan: Plan) {
+        startTransition(async () => {
+            const cards = await loadCardsFromDB(plan)
+            setCards(cards)
+        })
+        setCurrentPlan(plan)
+    }
 
     return (
         <>
@@ -64,24 +71,22 @@ export function PCardSelector() {
                 <div className="flex gap-4">
                     <div className="rounded-md bg-accent flex flex-wrap p-2 gap-1 w-21">
                         <Image
-                            src={FreePlan}
-                            alt="FREE"
-                            className="size-8 cursor-pointer hover:bg-gray-500"
-                        />
-                        <Image
                             src={SensePlan}
                             alt="FREE"
                             className="size-8 cursor-pointer hover:bg-gray-500"
+                            onClick={() => applyPlan(Plan.SENSE)}
                         />
                         <Image
                             src={LogicPlan}
                             alt="FREE"
                             className="size-8 cursor-pointer hover:bg-gray-500"
+                            onClick={() => applyPlan(Plan.LOGIC)}
                         />
                         <Image
                             src={AnomalyPlan}
                             alt="FREE"
                             className="size-8 cursor-pointer hover:bg-gray-500"
+                            onClick={() => applyPlan(Plan.ANOMALY)}
                         />
                     </div>
                 </div>

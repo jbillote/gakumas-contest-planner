@@ -4,9 +4,6 @@ import { PCard } from "@/generated/prisma"
 import { Plan } from "@/generated/prisma"
 import { PrismaClient } from "@prisma/client"
 
-import { typeFromDBString } from "@/lib/cardTypes"
-import { rarityFromString } from "@/lib/rarity"
-
 async function loadCardsFromDB(plan: Plan): Promise<PCard[]> {
   const prisma = new PrismaClient()
   const cards = await prisma.pCard.findMany({
