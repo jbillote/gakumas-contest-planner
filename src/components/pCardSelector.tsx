@@ -73,19 +73,19 @@ export function PCardSelector() {
                         <Image
                             src={SensePlan}
                             alt="FREE"
-                            className="size-8 cursor-pointer hover:bg-gray-500"
+                            className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                             onClick={() => applyPlan(Plan.SENSE)}
                         />
                         <Image
                             src={LogicPlan}
                             alt="FREE"
-                            className="size-8 cursor-pointer hover:bg-gray-500"
+                            className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                             onClick={() => applyPlan(Plan.LOGIC)}
                         />
                         <Image
                             src={AnomalyPlan}
                             alt="FREE"
-                            className="size-8 cursor-pointer hover:bg-gray-500"
+                            className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                             onClick={() => applyPlan(Plan.ANOMALY)}
                         />
                     </div>
@@ -94,75 +94,83 @@ export function PCardSelector() {
                     <Image
                         src={SDSaki}
                         alt="花海咲季"
-                        className="size-8 cursor-pointer hover:bg-gray-500"
+                        className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                         onClick={() => { setCurrentCharacter(PIdols.Saki) }}
                     />
                     <Image
                         src={SDTemari}
                         alt="月村手毬"
-                        className="size-8 cursor-pointer hover:bg-gray-500"
+                        className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                         onClick={() => { setCurrentCharacter(PIdols.Temari) }}
                     />
                     <Image
                         src={SDKotone}
                         alt="藤田ことね"
-                        className="size-8 cursor-pointer hover:bg-gray-500"
+                        className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                         onClick={() => { setCurrentCharacter(PIdols.Kotone) }}
                     />
                     <Image
                         src={SDMao}
                         alt="有村麻央"
-                        className="size-8 cursor-pointer hover:bg-gray-500"
+                        className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                         onClick={() => { setCurrentCharacter(PIdols.Mao) }}
                     />
                     <Image
                         src={SDLilja}
                         alt="葛城リーリヤ"
-                        className="size-8 cursor-pointer hover:bg-gray-500"
+                        className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                         onClick={() => { setCurrentCharacter(PIdols.Lilja) }}
                     />
                     <Image
                         src={SDChina}
                         alt="倉本千奈"
-                        className="size-8 cursor-pointer hover:bg-gray-500"
+                        className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                         onClick={() => { setCurrentCharacter(PIdols.China) }}
                     />
                     <Image
                         src={SDSumika}
                         alt="紫雲清夏"
-                        className="size-8 cursor-pointer hover:bg-gray-500"
+                        className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                         onClick={() => { setCurrentCharacter(PIdols.Sumika) }}
                     />
                     <Image
                         src={SDHiro}
                         alt="篠澤広"
-                        className="size-8 cursor-pointer hover:bg-gray-500"
+                        className="size-8 cursor-pointer hover:bg-gray-50 hover:border-solid rounded-full0"
                         onClick={() => { setCurrentCharacter(PIdols.Hiro) }}
                     />
                     <Image
                         src={SDSena}
                         alt="十王星南"
-                        className="size-8 cursor-pointer hover:bg-gray-500"
+                        className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                         onClick={() => { setCurrentCharacter(PIdols.Sena) }}
                     />
                     <Image
                         src={SDMisuzu}
                         alt="秦谷美鈴"
-                        className="size-8 cursor-pointer hover:bg-gray-500"
+                        className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                         onClick={() => { setCurrentCharacter(PIdols.Misuzu) }}
                     />
                     <Image
                         src={SDUme}
                         alt="花海佑芽"
-                        className="size-8 cursor-pointer hover:bg-gray-500"
+                        className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                         onClick={() => { setCurrentCharacter(PIdols.Ume) }}
                     />
                     <Image
                         src={SDRinami}
                         alt="姫崎莉波"
-                        className="size-8 cursor-pointer hover:bg-gray-500"
+                        className="size-8 cursor-pointer hover:bg-gray-500 hover:border-solid rounded-full"
                         onClick={() => { setCurrentCharacter(PIdols.Rinami) }}
                     />
+                </div>
+                <div className="rounded-md bg-accent flex w-fit full p-2">
+                    <div className="text-xs font-bold justify-center align-center">
+                        ENHANCED
+                    </div>
+                    <div className="justify-center align-center">
+                        <input type="checkbox" />
+                    </div>
                 </div>
             </div>
         </>
