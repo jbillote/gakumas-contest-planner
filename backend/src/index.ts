@@ -1,6 +1,9 @@
 import { apollo } from '@elysiajs/apollo'
 import { Elysia } from 'elysia'
+import { connectToDB } from './db/connection'
 import { Resolvers, Schema } from './schema'
+
+await connectToDB()
 
 const app = new Elysia()
   .use(
