@@ -1,9 +1,9 @@
-import { PCardService } from '../../services/pCardService'
+import { pCardService } from '../../services/pCardService'
 
 export const PCardResolvers = {
   Query: {
     pCards: async (_: unknown, { plan }: { plan: string }) => {
-      return await PCardService.getPCards(plan)
+      return await pCardService.getPCards(plan)
     },
   },
   Type: {

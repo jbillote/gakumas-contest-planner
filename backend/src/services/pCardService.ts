@@ -1,9 +1,12 @@
 import { PCard } from '../models/PCard'
 
-class PCardService {
-  static async getPCards(plan: string) {
-    return await PCard.find({ plan: plan })
+const createPCardService = () => {
+  return {
+    async getPCards(plan: string) {
+      return await PCard.find({ plan: plan }).exec()
+    },
   }
 }
 
-export { PCardService }
+export { createPCardService }
+export const pCardService = createPCardService()
