@@ -1,0 +1,11 @@
+{
+  "id": 203,
+  "filename": "img_general_skillcard_act-2_031",
+  "name": "情熱ターン",
+  "type": "ACTIVE",
+  "plan": "SENSE",
+  "rarity": "SR",
+  "support": false,
+  "cost": "LOW",
+  "customCharacter": true
+}

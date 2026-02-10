@@ -1,0 +1,11 @@
+{
+  "id": 212,
+  "filename": "img_general_skillcard_act-2_047",
+  "name": "ありがとうの言葉",
+  "type": "ACTIVE",
+  "plan": "LOGIC",
+  "rarity": "SR",
+  "support": false,
+  "cost": "LOW",
+  "customCharacter": true
+}

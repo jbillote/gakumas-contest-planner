@@ -1,0 +1,11 @@
+{
+  "id": 102,
+  "filename": "img_general_skillcard_act-1_022",
+  "name": "準備運動",
+  "type": "ACTIVE",
+  "plan": "SENSE",
+  "rarity": "R",
+  "support": false,
+  "cost": "LOW",
+  "customCharacter": true
+}

@@ -1,0 +1,11 @@
+{
+  "id": 119,
+  "filename": "img_general_skillcard_act-1_042",
+  "name": "積み重ね",
+  "type": "ACTIVE",
+  "plan": "ANOMALY",
+  "rarity": "R",
+  "support": false,
+  "cost": "HIGH",
+  "customCharacter": false
+}

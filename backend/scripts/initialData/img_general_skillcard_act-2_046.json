@@ -1,0 +1,11 @@
+{
+  "id": 211,
+  "filename": "img_general_skillcard_act-2_046",
+  "name": "ラブリーウインク",
+  "type": "ACTIVE",
+  "plan": "LOGIC",
+  "rarity": "SR",
+  "support": false,
+  "cost": "LOW",
+  "customCharacter": true
+}

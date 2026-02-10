@@ -1,0 +1,11 @@
+{
+  "id": 230,
+  "filename": "img_general_skillcard_men-2_043",
+  "name": "大声援",
+  "type": "MENTAL",
+  "plan": "SENSE",
+  "rarity": "SR",
+  "support": false,
+  "cost": "LOW",
+  "customCharacter": true
+}

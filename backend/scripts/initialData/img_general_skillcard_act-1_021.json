@@ -1,0 +1,11 @@
+{
+  "id": 106,
+  "filename": "img_general_skillcard_act-1_021",
+  "name": "トークタイム",
+  "type": "ACTIVE",
+  "plan": "SENSE",
+  "rarity": "R",
+  "support": false,
+  "cost": "HIGH",
+  "customCharacter": false
+}

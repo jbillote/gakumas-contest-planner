@@ -1,0 +1,11 @@
+{
+  "id": 111,
+  "filename": "img_general_skillcard_act-1_029",
+  "name": "もう少しだけ",
+  "type": "ACTIVE",
+  "plan": "LOGIC",
+  "rarity": "R",
+  "support": false,
+  "cost": "LOW",
+  "customCharacter": false
+}

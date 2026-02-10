@@ -1,0 +1,11 @@
+{
+  "id": 105,
+  "filename": "img_general_skillcard_act-1_020",
+  "name": "ハイタッチ",
+  "type": "ACTIVE",
+  "plan": "SENSE",
+  "rarity": "R",
+  "support": false,
+  "cost": "HIGH",
+  "customCharacter": false
+}

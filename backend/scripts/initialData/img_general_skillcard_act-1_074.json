@@ -1,0 +1,11 @@
+{
+  "id": 108,
+  "filename": "img_general_skillcard_act-1_074",
+  "name": "ペース配分",
+  "type": "ACTIVE",
+  "plan": "SENSE",
+  "rarity": "R",
+  "support": false,
+  "cost": "HIGH",
+  "customCharacter": true
+}

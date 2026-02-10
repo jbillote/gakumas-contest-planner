@@ -1,0 +1,11 @@
+{
+  "id": 226,
+  "filename": "img_general_skillcard_act-2_071",
+  "name": "トレーニングの成果",
+  "type": "ACTIVE",
+  "plan": "ANOMALY",
+  "rarity": "SR",
+  "support": false,
+  "cost": "HIGH",
+  "customCharacter": true
+}

@@ -1,0 +1,11 @@
+{
+  "id": 213,
+  "filename": "img_general_skillcard_act-2_045",
+  "name": "ハートの合図",
+  "type": "ACTIVE",
+  "plan": "LOGIC",
+  "rarity": "SR",
+  "support": false,
+  "cost": "HIGH",
+  "customCharacter": true
+}

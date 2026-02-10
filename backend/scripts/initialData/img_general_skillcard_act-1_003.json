@@ -1,0 +1,11 @@
+{
+  "id": 112,
+  "filename": "img_general_skillcard_act-1_003",
+  "name": "手拍子",
+  "type": "ACTIVE",
+  "plan": "LOGIC",
+  "rarity": "R",
+  "support": false,
+  "cost": "HIGH",
+  "customCharacter": false
+}

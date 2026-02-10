@@ -1,0 +1,11 @@
+{
+  "id": 113,
+  "filename": "img_general_skillcard_act-1_004",
+  "name": "元気な挨拶",
+  "type": "ACTIVE",
+  "plan": "LOGIC",
+  "rarity": "R",
+  "support": false,
+  "cost": "HIGH",
+  "customCharacter": false
+}

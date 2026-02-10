@@ -1,0 +1,11 @@
+{
+  "id": 123,
+  "filename": "img_general_skillcard_men-1_024",
+  "name": "バランス感覚",
+  "type": "MENTAL",
+  "plan": "SENSE",
+  "rarity": "R",
+  "support": false,
+  "cost": "LOW",
+  "customCharacter": false
+}

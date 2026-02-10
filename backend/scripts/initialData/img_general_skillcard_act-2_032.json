@@ -1,0 +1,11 @@
+{
+  "id": 207,
+  "filename": "img_general_skillcard_act-2_032",
+  "name": "スタンドプレー",
+  "type": "ACTIVE",
+  "plan": "SENSE",
+  "rarity": "SR",
+  "support": false,
+  "cost": "HIGH",
+  "customCharacter": true
+}

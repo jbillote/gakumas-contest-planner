@@ -1,0 +1,11 @@
+{
+  "id": 208,
+  "filename": "img_general_skillcard_act-2_001",
+  "name": "シュプレヒコール",
+  "type": "ACTIVE",
+  "plan": "SENSE",
+  "rarity": "SR",
+  "support": false,
+  "cost": "HIGH",
+  "customCharacter": true
+}
