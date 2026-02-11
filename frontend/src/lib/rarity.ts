@@ -1,13 +1,13 @@
-import { Rarity } from "@/generated/prisma"
+import { Rarity } from '@/generated/prisma'
 
 const CardRarities = {
   R: 'r',
   SR: 'sr',
   SSR: 'ssr',
-  T: 't'
+  T: 't',
 } as const
 
-type CardRarity = typeof CardRarities[keyof typeof CardRarities]
+type CardRarity = (typeof CardRarities)[keyof typeof CardRarities]
 
 function rarityFromString(rarity: Rarity): CardRarity {
   switch (rarity) {

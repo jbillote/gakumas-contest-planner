@@ -1,6 +1,6 @@
 type PCard = {
-  filename: string,
-  name: string,
+  filename: string
+  name: string
   type: string
 }
 

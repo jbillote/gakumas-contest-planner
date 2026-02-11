@@ -10,10 +10,10 @@ const PIdols = {
   Sena: '-jsna',
   Misuzu: '-hmsz',
   Ume: '-hume',
-  Rinami: '-hrnm'
+  Rinami: '-hrnm',
 } as const
 
-type PIdol = typeof PIdols[keyof typeof PIdols]
+type PIdol = (typeof PIdols)[keyof typeof PIdols]
 
 export { PIdols }
 export type { PIdol }
