@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import "./globals.css"
 import { Noto_Sans_JP } from "next/font/google"
+import { Providers } from "./providers";
 
 const noto = Noto_Sans_JP({
   style: ["normal"],
@@ -17,7 +18,9 @@ export default function RootLayout({
     <html lang="en" className={noto.className + " dark"} >
       <body>
         <Header />
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html >
   );
