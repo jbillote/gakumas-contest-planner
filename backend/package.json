@@ -10,6 +10,7 @@
   "dependencies": {
     "@apollo/server": "^5.4.0",
     "@elysiajs/apollo": "^1.4.0",
+    "@elysiajs/cors": "^1.4.1",
     "elysia": "^1.4.23",
     "graphql": "^16.12.0",
     "mongoose": "^9.2.0"
