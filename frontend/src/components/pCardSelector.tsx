@@ -18,7 +18,7 @@ import SDTemari from '@/assets/sd_icons/img_sd_ttmr_face-00.webp'
 import { usePCards } from '@/hooks/usePcard'
 import { PIdol, PIdols } from '@/lib/pIdols'
 import Image from 'next/image'
-import { startTransition, useEffect, useState } from 'react'
+import { useState } from 'react'
 import { PCardIcon } from './pCardIcon'
 
 export function PCardSelector() {
