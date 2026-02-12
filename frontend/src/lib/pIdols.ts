@@ -6,7 +6,7 @@ const PIdols = {
   Lilja: '-kllj',
   China: '-kcna',
   Sumika: '-ssmk',
-  Hiro: '-shiro',
+  Hiro: '-shro',
   Sena: '-jsna',
   Misuzu: '-hmsz',
   Ume: '-hume',

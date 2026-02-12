@@ -128,7 +128,7 @@ export function PCardSelector() {
           <Image
             src={SDHiro}
             alt="篠澤広"
-            className="rounded-full0 size-8 cursor-pointer hover:border-solid hover:bg-gray-50"
+            className="size-8 cursor-pointer rounded-full hover:border-solid hover:bg-gray-500"
             onClick={() => {
               setCurrentCharacter(PIdols.Hiro)
             }}
