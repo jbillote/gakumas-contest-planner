@@ -1,12 +1,5 @@
 'use client'
 
-import { PCard, Plan } from '@/generated/prisma'
-import { typeFromDBString } from '@/lib/cardTypes'
-import { loadCardsFromDB } from '@/lib/fetchCards'
-import { PIdol, PIdols } from '@/lib/pIdols'
-import { rarityFromString } from '@/lib/rarity'
-import Image from 'next/image'
-import { startTransition, useEffect, useState } from 'react'
 import SensePlan from '@/assets/icon_plan_plan1.webp'
 import LogicPlan from '@/assets/icon_plan_plan2.webp'
 import AnomalyPlan from '@/assets/icon_plan_plan3.webp'
@@ -22,6 +15,13 @@ import SDLilja from '@/assets/sd_icons/img_sd_kllj_face-00.webp'
 import SDHiro from '@/assets/sd_icons/img_sd_shro_face-00.webp'
 import SDSumika from '@/assets/sd_icons/img_sd_ssmk_face-00.webp'
 import SDTemari from '@/assets/sd_icons/img_sd_ttmr_face-00.webp'
+import { PCard, Plan } from '@/generated/prisma'
+import { typeFromDBString } from '@/lib/cardTypes'
+import { loadCardsFromDB } from '@/lib/fetchCards'
+import { PIdol, PIdols } from '@/lib/pIdols'
+import { rarityFromString } from '@/lib/rarity'
+import Image from 'next/image'
+import { startTransition, useEffect, useState } from 'react'
 import { PCardIcon } from './pCardIcon'
 
 export function PCardSelector() {
@@ -30,7 +30,7 @@ export function PCardSelector() {
   const [cards, setCards] = useState([] as PCard[])
 
   useEffect(() => {
-    ; (async () => {
+    ;(async () => {
       const cards = await loadCardsFromDB(currentPlan)
       setCards(cards)
     })()

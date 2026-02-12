@@ -3,16 +3,18 @@ import { useQuery } from '@tanstack/react-query'
 import { gql } from 'graphql-request'
 
 const PCARD_QUERY = gql`
-  pCards($plan: Plan) {
-    id
-    filename
-    name
-    type
-    plan
-    rarity
-    support
-    cost
-    customCharacter
+  query PCards($plan: Plan) {
+    pCards(plan: $plan) {
+      id
+      filename
+      name
+      type
+      plan
+      rarity
+      support
+      cost
+      customCharacter
+    }
   }
 `
 
