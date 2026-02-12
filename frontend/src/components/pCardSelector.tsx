@@ -15,34 +15,18 @@ import SDLilja from '@/assets/sd_icons/img_sd_kllj_face-00.webp'
 import SDHiro from '@/assets/sd_icons/img_sd_shro_face-00.webp'
 import SDSumika from '@/assets/sd_icons/img_sd_ssmk_face-00.webp'
 import SDTemari from '@/assets/sd_icons/img_sd_ttmr_face-00.webp'
-import { PCard, Plan } from '@/generated/prisma'
-import { typeFromDBString } from '@/lib/cardTypes'
-import { loadCardsFromDB } from '@/lib/fetchCards'
+import { usePCards } from '@/hooks/usePcard'
 import { PIdol, PIdols } from '@/lib/pIdols'
-import { rarityFromString } from '@/lib/rarity'
 import Image from 'next/image'
 import { startTransition, useEffect, useState } from 'react'
 import { PCardIcon } from './pCardIcon'
 
 export function PCardSelector() {
-  const [currentPlan, setCurrentPlan] = useState(Plan.LOGIC as Plan)
+  const [currentPlan, setCurrentPlan] = useState('SENSE')
   const [currentCharacter, setCurrentCharacter] = useState(PIdols.Sena as PIdol)
-  const [cards, setCards] = useState([] as PCard[])
 
-  useEffect(() => {
-    ;(async () => {
-      const cards = await loadCardsFromDB(currentPlan)
-      setCards(cards)
-    })()
-  }, [])
-
-  function applyPlan(plan: Plan) {
-    startTransition(async () => {
-      const cards = await loadCardsFromDB(plan)
-      setCards(cards)
-    })
-    setCurrentPlan(plan)
-  }
+  const { data, isLoading, error, refetch } = usePCards(currentPlan)
+  const cards = data ?? []
 
   return (
     <>
@@ -53,8 +37,8 @@ export function PCardSelector() {
               pCard={{
                 id: `${card.filename}${card.customCharacter ? currentCharacter : ''}`,
                 enhanced: false,
-                type: typeFromDBString(card.type),
-                rarity: rarityFromString(card.rarity),
+                type: card.type,
+                rarity: card.rarity,
               }}
               key={card.id}
             />
@@ -68,19 +52,19 @@ export function PCardSelector() {
               src={SensePlan}
               alt="FREE"
               className="size-8 cursor-pointer rounded-full hover:border-solid hover:bg-gray-500"
-              onClick={() => applyPlan(Plan.SENSE)}
+              onClick={() => setCurrentPlan('SENSE')}
             />
             <Image
               src={LogicPlan}
               alt="FREE"
               className="size-8 cursor-pointer rounded-full hover:border-solid hover:bg-gray-500"
-              onClick={() => applyPlan(Plan.LOGIC)}
+              onClick={() => setCurrentPlan('LOGIC')}
             />
             <Image
               src={AnomalyPlan}
               alt="FREE"
               className="size-8 cursor-pointer rounded-full hover:border-solid hover:bg-gray-500"
-              onClick={() => applyPlan(Plan.ANOMALY)}
+              onClick={() => setCurrentPlan('ANOMALY')}
             />
           </div>
         </div>

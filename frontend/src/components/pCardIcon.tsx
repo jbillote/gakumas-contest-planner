@@ -1,19 +1,29 @@
-import { CardType, CardTypes } from '@/lib/cardTypes'
-import { CardRarity } from '@/lib/rarity'
-
 type pCardIconProps = {
   id: string
   enhanced: boolean
-  type: CardType
-  rarity: CardRarity
+  type: string
+  rarity: string
+}
+
+function convertType(type: string): string {
+  switch (type) {
+    case 'ACTIVE':
+      return 'a'
+    case 'MENTAL':
+      return 'm'
+    case 'TROUBLE':
+      return 't'
+    default:
+      return 'a'
+  }
 }
 
 export function PCardIcon({ pCard }: { pCard: pCardIconProps }) {
   let frame = 'card_frame_'
-  if (pCard.type == CardTypes.Trouble) {
-    frame += pCard.type
+  if (pCard.type === 'TROUBLE') {
+    frame += convertType(pCard.type)
   } else {
-    frame += `${pCard.type}_${pCard.rarity}`
+    frame += `${convertType(pCard.type)}_${pCard.rarity.toLowerCase()}`
   }
 
   return (

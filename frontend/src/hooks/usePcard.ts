@@ -31,7 +31,7 @@ type PCard = {
 }
 
 type PCardResponse = {
-  pcards: PCard[]
+  pCards: PCard[]
 }
 
 type PCardVariables = {
@@ -43,7 +43,7 @@ function usePCards(plan: string) {
     queryKey: ['pcards', plan],
     queryFn: async () => {
       const data = await graphqlClient.request<PCardResponse, PCardVariables>(PCARD_QUERY, { plan })
-      return data.pcards
+      return data.pCards
     },
   })
 }
