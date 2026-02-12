@@ -25,7 +25,7 @@ export function PCardSelector() {
   const [currentPlan, setCurrentPlan] = useState('SENSE')
   const [currentCharacter, setCurrentCharacter] = useState(PIdols.Sena as PIdol)
 
-  const { data, isLoading, error, refetch } = usePCards(currentPlan)
+  const { data } = usePCards(currentPlan)
   const cards = data ?? []
 
   return (
