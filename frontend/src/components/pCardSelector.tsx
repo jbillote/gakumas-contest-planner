@@ -7,21 +7,21 @@ import { PIdol, PIdols } from '@/lib/pIdols'
 import { rarityFromString } from '@/lib/rarity'
 import Image from 'next/image'
 import { startTransition, useEffect, useState } from 'react'
-import SensePlan from '../../public/icon_plan_plan1.webp'
-import LogicPlan from '../../public/icon_plan_plan2.webp'
-import AnomalyPlan from '../../public/icon_plan_plan3.webp'
-import SDMao from '../../public/sd_icons/img_sd_amao_face-00.webp'
-import SDKotone from '../../public/sd_icons/img_sd_fktn_face-00.webp'
-import SDMisuzu from '../../public/sd_icons/img_sd_hmsz_face-00.webp'
-import SDRinami from '../../public/sd_icons/img_sd_hrnm_face-00.webp'
-import SDSaki from '../../public/sd_icons/img_sd_hski_face-00.webp'
-import SDUme from '../../public/sd_icons/img_sd_hume_face-00.webp'
-import SDSena from '../../public/sd_icons/img_sd_jsna_face-00.webp'
-import SDChina from '../../public/sd_icons/img_sd_kcna_face-00.webp'
-import SDLilja from '../../public/sd_icons/img_sd_kllj_face-00.webp'
-import SDHiro from '../../public/sd_icons/img_sd_shro_face-00.webp'
-import SDSumika from '../../public/sd_icons/img_sd_ssmk_face-00.webp'
-import SDTemari from '../../public/sd_icons/img_sd_ttmr_face-00.webp'
+import SensePlan from '@/assets/icon_plan_plan1.webp'
+import LogicPlan from '@/assets/icon_plan_plan2.webp'
+import AnomalyPlan from '@/assets/icon_plan_plan3.webp'
+import SDMao from '@/assets/sd_icons/img_sd_amao_face-00.webp'
+import SDKotone from '@/assets/sd_icons/img_sd_fktn_face-00.webp'
+import SDMisuzu from '@/assets/sd_icons/img_sd_hmsz_face-00.webp'
+import SDRinami from '@/assets/sd_icons/img_sd_hrnm_face-00.webp'
+import SDSaki from '@/assets/sd_icons/img_sd_hski_face-00.webp'
+import SDUme from '@/assets/sd_icons/img_sd_hume_face-00.webp'
+import SDSena from '@/assets/sd_icons/img_sd_jsna_face-00.webp'
+import SDChina from '@/assets/sd_icons/img_sd_kcna_face-00.webp'
+import SDLilja from '@/assets/sd_icons/img_sd_kllj_face-00.webp'
+import SDHiro from '@/assets/sd_icons/img_sd_shro_face-00.webp'
+import SDSumika from '@/assets/sd_icons/img_sd_ssmk_face-00.webp'
+import SDTemari from '@/assets/sd_icons/img_sd_ttmr_face-00.webp'
 import { PCardIcon } from './pCardIcon'
 
 export function PCardSelector() {
@@ -30,7 +30,7 @@ export function PCardSelector() {
   const [cards, setCards] = useState([] as PCard[])
 
   useEffect(() => {
-    ;(async () => {
+    ; (async () => {
       const cards = await loadCardsFromDB(currentPlan)
       setCards(cards)
     })()
