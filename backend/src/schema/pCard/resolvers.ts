@@ -2,8 +2,8 @@ import { pCardService } from '../../services/pCardService'
 
 export const PCardResolvers = {
   Query: {
-    pCards: async (_: unknown, { plan }: { plan: string }) => {
-      return await pCardService.getPCards(plan)
+    pCards: async (_: unknown, { plan, includeFree }: { plan: string; includeFree: boolean }) => {
+      return await pCardService.getPCards(plan, includeFree)
     },
   },
   Type: {

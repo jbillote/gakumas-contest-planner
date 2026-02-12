@@ -13,9 +13,11 @@ const app = new Elysia()
       resolvers: Resolvers,
     }),
   )
-  .use(cors({
-    origin: '*'
-  }))
+  .use(
+    cors({
+      origin: '*',
+    }),
+  )
   .listen(process.env.PORT || 3000)
 
 console.log(`🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`)
