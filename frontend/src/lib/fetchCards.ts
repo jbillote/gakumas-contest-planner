@@ -1,8 +1,7 @@
 'use server'
 
-import { PCard } from "@/generated/prisma"
-import { Plan } from "@/generated/prisma"
-import { PrismaClient } from "@prisma/client"
+import { PCard, Plan } from '@/generated/prisma'
+import { PrismaClient } from '@prisma/client'
 
 async function loadCardsFromDB(plan: Plan): Promise<PCard[]> {
   const prisma = new PrismaClient()
@@ -16,18 +15,18 @@ async function loadCardsFromDB(plan: Plan): Promise<PCard[]> {
       rarity: true,
       customCharacter: true,
       cost: true,
-      support: true
+      support: true,
     },
     where: {
       OR: [
         {
-          plan: plan
+          plan: plan,
         },
         {
-          plan: Plan.FREE
-        }
-      ]
-    }
+          plan: Plan.FREE,
+        },
+      ],
+    },
   })
   return cards
 }

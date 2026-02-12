@@ -37,7 +37,7 @@ const PCardSchema = `
   }
 
   type Query {
-    pCards(plan: Plan): [PCard!]!
+    pCards(plan: Plan, includeFree: Boolean = true): [PCard!]!
   }
 `
 

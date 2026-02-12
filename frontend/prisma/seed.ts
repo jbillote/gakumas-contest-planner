@@ -1,11 +1,12 @@
-import { PrismaClient } from "@/generated/prisma"
+import { PrismaClient } from '@/generated/prisma'
 
 const prisma = new PrismaClient()
 
 async function main() {
   // R
-  console.log("Inserting R card information")
-  const rResult = await prisma.$executeRaw`INSERT INTO "PCard" ("id", "filename", "name", "type", "plan", "rarity", "cost", "customCharacter") VALUES
+  console.log('Inserting R card information')
+  const rResult =
+    await prisma.$executeRaw`INSERT INTO "PCard" ("id", "filename", "name", "type", "plan", "rarity", "cost", "customCharacter") VALUES
     (100, "img_general_skillcard_act-1_002", "軽い足取り", "ACTIVE", "SENSE", "R", "LOW", false),
     (null, "img_general_skillcard_act-1_019", "愛嬌", "ACTIVE", "SENSE", "R", "LOW", false),
     (null, "img_general_skillcard_act-1_022", "準備運動", "ACTIVE", "SENSE", "R", "LOW", true),
@@ -48,8 +49,9 @@ async function main() {
   console.log(rResult)
 
   // SR
-  console.log("Inserting SR card information")
-  const srResult = await prisma.$executeRaw`INSERT INTO "PCard" ("id", "filename", "name", "type", "plan", "rarity", "cost", "customCharacter") VALUES
+  console.log('Inserting SR card information')
+  const srResult =
+    await prisma.$executeRaw`INSERT INTO "PCard" ("id", "filename", "name", "type", "plan", "rarity", "cost", "customCharacter") VALUES
     (200, "img_general_skillcard_act-2_009", "前途洋々", "ACTIVE", "FREE", "SR", "HIGH", true),
     (null, "img_general_skillcard_act-2_003", "決めポーズ", "ACTIVE", "SENSE", "SR", "LOW", true),
     (null, "img_general_skillcard_act-2_030", "アドリブ", "ACTIVE", "SENSE", "SR", "LOW", true),
@@ -113,8 +115,9 @@ async function main() {
     (null, "img_general_skillcard_men-2_078", "達成感", "MENTAL", "ANOMALY", "SR", "HIGH", true)`
   console.log(srResult)
 
-  console.log("Inserting SSR card information")
-  const ssrResult = await prisma.$executeRaw`INSERT INTO "PCard" ("id", "filename", "name", "type", "plan", "rarity", "cost", "customCharacter") VALUES
+  console.log('Inserting SSR card information')
+  const ssrResult =
+    await prisma.$executeRaw`INSERT INTO "PCard" ("id", "filename", "name", "type", "plan", "rarity", "cost", "customCharacter") VALUES
     (300, "img_general_skillcard_act-3_030", "コール＆レスポンス", "ACTIVE", "SENSE", "SSR", null, true),
     (null, "img_general_skillcard_act-3_031", "バズワード", "ACTIVE", "SENSE", "SSR", null, true),
     (null, "img_general_skillcard_act-3_029", "成就", "ACTIVE", "SENSE", "SSR", null, true),
@@ -156,8 +159,9 @@ async function main() {
   console.log(ssrResult)
 
   // Support
-  console.log("Inserting support card information")
-  const supportResult = await prisma.$executeRaw`INSERT INTO "PCard" ("id", "filename", "name", "type", "plan", "rarity", "cost", "customCharacter", "support") VALUES
+  console.log('Inserting support card information')
+  const supportResult =
+    await prisma.$executeRaw`INSERT INTO "PCard" ("id", "filename", "name", "type", "plan", "rarity", "cost", "customCharacter", "support") VALUES
     (500, "img_general_skillcard_sup-2_025", "お姉ちゃんだもの！", "ACTIVE", "FREE", "SR", null, false, true),
     (null, "img_general_skillcard_sup-2_026", "おアツイ視線", "MENTAL", "FREE", "SR", null, false, true),
     (null, "img_general_skillcard_sup-2_027", "ご指導ご鞭撻", "ACTIVE", "FREE", "SR", null, false, true),
@@ -200,8 +204,9 @@ async function main() {
   console.log(supportResult)
 
   // Trouble
-  console.log("Inserting trouble card information")
-  const troubleResult = await prisma.$executeRaw`INSERT INTO "PCard" ("id", "filename", "name", "type", "plan", "rarity", "cost", "customCharacter") VALUES
+  console.log('Inserting trouble card information')
+  const troubleResult =
+    await prisma.$executeRaw`INSERT INTO "PCard" ("id", "filename", "name", "type", "plan", "rarity", "cost", "customCharacter") VALUES
     (900, "img_general_skillcard_acc-0_002", "眠気", "TROUBLE", "FREE", "T", null, false)`
   console.log(troubleResult)
 }

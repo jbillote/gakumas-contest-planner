@@ -53,6 +53,7 @@ async function seed() {
       plan: planConversion[data.plan] || 'free',
       rarity: rarityConversion[data.rarity] || 't',
       cost: costConversion[data.cost] || 'low',
+      customCharacter: data.customCharacter,
     })
   }
   await PCard.insertMany(pcards)

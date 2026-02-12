@@ -1,12 +1,12 @@
-import { Type } from "@/generated/prisma"
+import { Type } from '@/generated/prisma'
 
 const CardTypes = {
   Trouble: 't',
   Active: 'a',
-  Mental: 'm'
+  Mental: 'm',
 } as const
 
-type CardType = typeof CardTypes[keyof typeof CardTypes]
+type CardType = (typeof CardTypes)[keyof typeof CardTypes]
 
 function typeFromDBString(dbType: Type): CardType {
   switch (dbType) {
@@ -14,7 +14,7 @@ function typeFromDBString(dbType: Type): CardType {
       return CardTypes.Active
     case 'MENTAL':
       return CardTypes.Mental
-    case "TROUBLE":
+    case 'TROUBLE':
       return CardTypes.Trouble
   }
 }
