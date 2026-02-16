@@ -1,9 +1,8 @@
+import { type PCard } from '@/lib/models/pCard'
+
 type pCardIconProps = {
-  id: string
-  enhanced: boolean
-  type: string
-  rarity: string
-  selectPCard: Function
+  pCard: PCard
+  selectPCard?: (pCard: PCard) => void
 }
 
 function convertType(type: string): string {
@@ -19,7 +18,7 @@ function convertType(type: string): string {
   }
 }
 
-export function PCardIcon({ pCard }: { pCard: pCardIconProps }) {
+function PCardIcon({ pCard, selectPCard }: pCardIconProps) {
   let frame = 'card_frame_'
   if (pCard.type === 'TROUBLE') {
     frame += convertType(pCard.type)
@@ -33,9 +32,11 @@ export function PCardIcon({ pCard }: { pCard: pCardIconProps }) {
       style={{
         backgroundImage: `url(/pcards/${pCard.id}.webp)`,
       }}
-      onClick={() => pCard.selectPCard({ filename: pCard.id, type: pCard.type, name: pCard.id })}
+      onClick={() => selectPCard(pCard)}
     >
       <img src={`/${frame}.webp`} alt={pCard.id} className="size-16" draggable={false} />
     </div>
   )
 }
+
+export { PCardIcon }
