@@ -10,11 +10,9 @@ export default function Home() {
   const [selectedCards, setSelectedCards] = useState<PCard[]>(Array(5).fill(null))
 
   const selectPCard = (pCard: PCard) => {
-    console.log('updating')
     setSelectedCards(oldValue => {
       const updatedValue = [...oldValue]
       updatedValue[0] = pCard
-      console.log(updatedValue[0])
       return updatedValue
     })
   }
@@ -23,10 +21,10 @@ export default function Home() {
     <div className="p-4 text-center">
       <h1 className="text-lg font-bold">Target Cards</h1>
       <div>
-        <div className="inline-block p-2" style={{ backgroundImage: selectedCards[0] ? `url(/pcards/${selectedCards[0].filename}.webp` : '' }}>
+        <div className="size-16 inline-block" style={{ backgroundImage: selectedCards[0] ? `url(/pcards/${selectedCards[0].filename}.webp` : '' }}>
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="secondary" />
+              <Button className="size-16 bg-cover" variant="secondary" style={{ backgroundImage: selectedCards[0] ? `url(/pcards/${selectedCards[0].filename}.webp` : '' }} />
             </DialogTrigger>
             <DialogContent className="flex h-5/6 flex-col">
               <DialogTitle className="sr-only">Target 1</DialogTitle>
@@ -35,16 +33,16 @@ export default function Home() {
           </Dialog>
         </div>
         <div className="inline-block p-2">
-          <Button variant="secondary" />
+          <Button className="size-16" variant="secondary" />
         </div>
         <div className="inline-block p-2">
-          <Button variant="secondary" />
+          <Button className="size-16" variant="secondary" />
         </div>
         <div className="inline-block p-2">
-          <Button variant="secondary" />
+          <Button className="size-16" variant="secondary" />
         </div>
         <div className="inline-block p-2">
-          <Button variant="secondary" />
+          <Button className="size-16" variant="secondary" />
         </div>
       </div>
 
