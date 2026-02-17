@@ -11,7 +11,7 @@ export default function Home() {
   const [selectedCards, setSelectedCards] = useState<PCard[]>(Array(5).fill(null))
 
   const selectPCard = (pCard: PCard) => {
-    setSelectedCards(oldValue => {
+    setSelectedCards((oldValue) => {
       const updatedValue = [...oldValue]
       updatedValue[0] = pCard
       return updatedValue
@@ -22,12 +22,11 @@ export default function Home() {
     <div className="p-4 text-center">
       <h1 className="text-lg font-bold">Target Cards</h1>
       <div>
-        <div className="size-16 inline-block">
+        <div className="m-2 inline-block size-16 items-center justify-center">
           <Dialog>
             <DialogTrigger asChild>
-              <Button className="size-16 bg-cover" variant="secondary">
-                {selectedCards[0] === null ? (<div></div>) :
-                  (<PCardIcon pCard={selectedCards[0]} />)}
+              <Button variant="secondary" className="m-0 size-full p-0">
+                {selectedCards[0] !== null && <PCardIcon pCard={selectedCards[0]} />}
               </Button>
             </DialogTrigger>
             <DialogContent className="flex h-5/6 flex-col">
@@ -51,6 +50,6 @@ export default function Home() {
       </div>
 
       <h1 className="text-lg font-bold">Valid Cards</h1>
-    </div >
+    </div>
   )
 }

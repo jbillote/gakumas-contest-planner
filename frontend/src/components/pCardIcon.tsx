@@ -28,7 +28,7 @@ function PCardIcon({ pCard, selectPCard }: pCardIconProps) {
 
   return (
     <div
-      className="size-16 cursor-pointer overflow-hidden rounded-lg bg-cover hover:outline-solid"
+      className="cursor-pointer overflow-hidden rounded-lg bg-cover hover:outline-solid"
       style={{
         backgroundImage: `url(/pcards/${pCard.id}.webp)`,
       }}

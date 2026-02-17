@@ -35,11 +35,11 @@ export function PCardSelector({ selectPCard }) {
           {cards.map((card) => (
             <PCardIcon
               pCard={{
-              id: `${card.filename}${card.customCharacter ? currentCharacter : ''}`,
-              enhanced: false,
-              type: card.type,
-              rarity: card.rarity
-                          }}
+                id: `${card.filename}${card.customCharacter ? currentCharacter : ''}`,
+                enhanced: false,
+                type: card.type,
+                rarity: card.rarity,
+              }}
               selectPCard={selectPCard}
               key={card.id}
             />
