@@ -33,7 +33,7 @@ function PCardIcon({ index, pCard, selectPCard }: pCardIconProps) {
       style={{
         backgroundImage: `url(/pcards/${pCard.id}.webp)`,
       }}
-      onClick={() => selectPCard(index, pCard)}
+      onClick={selectPCard ? () => selectPCard(index, pCard) : undefined}
     >
       <img src={`/${frame}.webp`} alt={pCard.id} className="size-16" draggable={false} />
       {pCard.enhanced && (
