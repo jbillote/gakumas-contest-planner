@@ -2,7 +2,8 @@ import { type PCard } from '@/lib/models/pCard'
 
 type pCardIconProps = {
   pCard: PCard
-  selectPCard?: (pCard: PCard) => void
+  index: number
+  selectPCard?: (index: number, pCard: PCard) => void
 }
 
 function convertType(type: string): string {
@@ -18,7 +19,7 @@ function convertType(type: string): string {
   }
 }
 
-function PCardIcon({ pCard, selectPCard }: pCardIconProps) {
+function PCardIcon({ index, pCard, selectPCard }: pCardIconProps) {
   let frame = 'card_frame_'
   if (pCard.type === 'TROUBLE') {
     frame += convertType(pCard.type)
@@ -32,7 +33,7 @@ function PCardIcon({ pCard, selectPCard }: pCardIconProps) {
       style={{
         backgroundImage: `url(/pcards/${pCard.id}.webp)`,
       }}
-      onClick={() => selectPCard(pCard)}
+      onClick={() => selectPCard(index, pCard)}
     >
       <img src={`/${frame}.webp`} alt={pCard.id} className="size-16" draggable={false} />
     </div>

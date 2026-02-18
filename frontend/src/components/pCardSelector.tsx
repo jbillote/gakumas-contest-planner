@@ -21,7 +21,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { PCardIcon } from './pCardIcon'
 
-export function PCardSelector({ selectPCard }) {
+export function PCardSelector({ index, selectPCard }) {
   const [currentPlan, setCurrentPlan] = useState('SENSE')
   const [currentCharacter, setCurrentCharacter] = useState(PIdols.Sena as PIdol)
 
@@ -40,6 +40,7 @@ export function PCardSelector({ selectPCard }) {
                 type: card.type,
                 rarity: card.rarity,
               }}
+              index={index}
               selectPCard={selectPCard}
               key={card.id}
             />
