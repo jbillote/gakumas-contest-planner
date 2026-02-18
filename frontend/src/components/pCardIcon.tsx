@@ -29,15 +29,19 @@ function PCardIcon({ index, pCard, selectPCard }: pCardIconProps) {
 
   return (
     <div
-      className="cursor-pointer overflow-hidden rounded-lg bg-cover hover:outline-solid"
+      className="relative cursor-pointer overflow-hidden rounded-lg bg-cover hover:outline-solid"
       style={{
         backgroundImage: `url(/pcards/${pCard.id}.webp)`,
       }}
       onClick={() => selectPCard(index, pCard)}
     >
       <img src={`/${frame}.webp`} alt={pCard.id} className="size-16" draggable={false} />
+      {pCard.enhanced && (
+        <div className="absolute right-0 bottom-0 h-1/3 w-1/3 font-extrabold">
+          <img src="/icon_enhanced.webp" alt="+" width="19px" height="19px" />
+        </div>
+      )}
     </div>
   )
 }
-
 export { PCardIcon }

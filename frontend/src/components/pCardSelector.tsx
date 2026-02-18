@@ -24,6 +24,11 @@ import { PCardIcon } from './pCardIcon'
 export function PCardSelector({ index, selectPCard }) {
   const [currentPlan, setCurrentPlan] = useState('SENSE')
   const [currentCharacter, setCurrentCharacter] = useState(PIdols.Sena as PIdol)
+  const [enhanced, setEnhanced] = useState(false)
+
+  const enhancedHandler = () => {
+    setEnhanced(!enhanced)
+  }
 
   const { data } = usePCards(currentPlan)
   const cards = data ?? []
@@ -36,7 +41,7 @@ export function PCardSelector({ index, selectPCard }) {
             <PCardIcon
               pCard={{
                 id: `${card.filename}${card.customCharacter ? currentCharacter : ''}`,
-                enhanced: false,
+                enhanced: enhanced,
                 type: card.type,
                 rarity: card.rarity,
               }}
@@ -171,7 +176,7 @@ export function PCardSelector({ index, selectPCard }) {
         <div className="bg-accent full flex w-fit rounded-md p-2">
           <div className="align-center justify-center text-xs font-bold">ENHANCED</div>
           <div className="align-center justify-center">
-            <input type="checkbox" />
+            <input type="checkbox" checked={enhanced} onChange={enhancedHandler} />
           </div>
         </div>
       </div>
